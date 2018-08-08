@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Train Schedule</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/javascript/javascript.js"></script>
+</head>
+<body>
+    <div class="container">
+    <!-- Header -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card bg-info">
+            <div class="card-body">
+                <h1 class="text-center text-white">The Official Train Schedule</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Train Schedule -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card">
+            <div class="card-body">
+                <h3 class="text-info">Current Train Schedule</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (mins)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Train -->
+    <div class="row mt-3 mb-3">
+        <div class="col-md-12">
+            <div class="card">
+            <div class="card-body">
+                <h3 class="text-info">Add A Train</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="train-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-train-time">First Train Time (HH:MM)</label>
+                        <input type="text" class="form-control" id="first-train-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (mins)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
