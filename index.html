@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- MOMENT JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- JAVASCRIPT -->
@@ -20,8 +22,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card bg-info">
-            <div class="card-body">
-                <h1 class="text-center text-white">The Official Train Schedule</h1>
+            <div class="card-body text-center">
+                <img src="assets/photos/orange-train-1.png" class="train-pic" />
+                <img src="assets/photos/orange-train-2.png" class="train-pic" />
+                <h1 class="text-white">Today's Official Train Schedule</h1>
+                <h5 class="text-white">All aboard, ladies and gentlemen!</h5>
             </div>
             </div>
         </div>
@@ -31,7 +36,7 @@
         <div class="col-md-12">
             <div class="card">
             <div class="card-body">
-                <h3 class="text-info">Current Train Schedule</h3>
+                <h3>Current Train Schedule</h3>
                 <table class="table">
                     <thead>
                         <tr>
@@ -54,7 +59,7 @@
         <div class="col-md-12">
             <div class="card">
             <div class="card-body">
-                <h3 class="text-info">Add A Train</h3>
+                <h3>Add A Train</h3>
                 <form>
                     <div class="form-group">
                         <label for="train-name">Train Name</label>
@@ -65,7 +70,7 @@
                         <input type="text" class="form-control" id="destination">
                     </div>
                     <div class="form-group">
-                        <label for="first-train-time">First Train Time (HH:MM)</label>
+                        <label for="first-train-time">First Train Time (HH:MM, Military Time)</label>
                         <input type="text" class="form-control" id="first-train-time">
                     </div>
                     <div class="form-group">

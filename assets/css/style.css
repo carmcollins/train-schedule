@@ -1,0 +1,11 @@
+body {
+    background-image: url(../photos/bg.png);
+}
+
+h3 {
+    color: #F17C20;
+}
+
+.train-pic {
+    width: 100px;
+}
