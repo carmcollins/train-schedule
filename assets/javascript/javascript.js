@@ -16,14 +16,14 @@ var database = firebase.database();
 // When child is added...
 database.ref().on("child_added", function(childSnapshot) {
     // Calculating next arrival and minutes away
-    var frequency = childSnapshot.val().frequency
+    var frequency = childSnapshot.val().frequency;
     var currentTime = moment();
     var firstTrainTime = childSnapshot.val().firstTrainTime;
     var firstTimeConverted = moment(firstTrainTime, "HH:mm").subtract(1, "years");
-    var diffTime = currentTime - firstTimeConverted;
+    var diffTime = currentTime.diff(moment(firstTimeConverted), "minutes");
     var remainder = diffTime % frequency;
     var minsAway = frequency - remainder;
-    var nextTrain = moment(currentTime).add(minsAway, "m");
+    var nextTrain = moment(currentTime).add(minsAway, "minutes");
     var nextTrainFormatted = moment(nextTrain).format("HH:mm");
 
     // ...get info from database and push to HTML table
