@@ -1,5 +1,4 @@
 # Train Schedule Database
-Homework #7
 
 ### About The Project
 This project uses HTML, CSS, Bootstrap, Javascript, Moment JS, and Firebase to create a web page that displays a dynamic train schedule.
@@ -10,3 +9,5 @@ The submissions are stored in Firebase and then displayed on the web page in a t
 
 ### To See The Project
 Go to [this page](https://carmcollins.github.io/train-schedule/) and add a train!
+
+<img src="assets/photos/app.png">
